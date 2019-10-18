@@ -17,5 +17,11 @@ node_modules
 # Project build
 dist
 
+<<<<<<< HEAD
 #config
 src/config.js
+=======
+#configuration
+src/config.js
+
+>>>>>>> b1e86ae4aeeb065aa38314e884c9128f4d9d66c3
