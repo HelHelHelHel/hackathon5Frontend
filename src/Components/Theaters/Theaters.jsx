@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 export default function Theaters(props) {
+    
     return (
 
         <>
@@ -15,15 +16,15 @@ export default function Theaters(props) {
             <div className="calltoaction">Please select a theater near you</div>
 
             <ul>
-                <li>
-                    <Link to="/prague">Prague</Link>
-                </li>
-                <li>
-                    <Link to="/london">London</Link>
-                </li>
-                <li>
-                    <Link to="/brussels">Brussels</Link>
-                </li>
+                {
+                    props.data.map((item, i) => (
+                        <li>
+                            <Link key={i} to={`/${item.slug}`}>{item.name}</Link>
+                        </li>
+                    ))
+                    
+                
+                }
             </ul>
         </>
 
