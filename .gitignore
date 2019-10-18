@@ -17,3 +17,6 @@ node_modules
 # Project build
 dist
 
+#configuration
+src/config.js
+
