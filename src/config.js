@@ -1,3 +1,3 @@
 export default {
-    base_url: 'http://www.cinema.localhost'
+    base_url: 'http://www.helcinema.test:8080'
 }
