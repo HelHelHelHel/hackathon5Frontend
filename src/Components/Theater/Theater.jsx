@@ -12,6 +12,10 @@ export default function Theater(props) {
             />
 
             <h1>{ props.data.name }</h1>
+            <p>{ props.data.address }</p>
+            <p>{ props.data.url }</p>
+            <p>{ props.data.opens_at }</p>
+            <p>{ props.data.closes_at }</p>
 
             <div className="page__columns">
 
