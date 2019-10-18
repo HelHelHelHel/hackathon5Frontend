@@ -15,6 +15,7 @@ export default function TopMenu(props) {
             <Link to="/">Theater selection</Link>
             <Link to={ match.url }>Home</Link>
             <Link to={`${match.url}/programme`}>Programme</Link>
+            <Link to="/movies">Movies</Link>
         </nav>
 
     )

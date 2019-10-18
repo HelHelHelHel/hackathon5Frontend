@@ -13,23 +13,30 @@ export default function Theater(props) {
                     <tr>
                         <th>Movie</th>
                         {
-                            hours.map(hour => {
+                            hours.map(hour => (
                                 <th className="hour">
                                     { hour }
                                 </th>
-                            })
+                            ))
                         }
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        this.data.movies.map((item, i) => {
+                        // props.data.map((item, i) => {
+                        //     <MovieDayProgramme
+                        //         key={ i }
+                        //         movie={ item.name }
+                        //         times={ item.times }
+                        //     />
+                        // })
+                        props.data.map((item, i) => (
                             <MovieDayProgramme
                                 key={ i }
-                                movie={ item.movie }
+                                movie={ item.name }
                                 times={ item.times }
                             />
-                        })
+                        ))
                     }
                 </tbody>
 

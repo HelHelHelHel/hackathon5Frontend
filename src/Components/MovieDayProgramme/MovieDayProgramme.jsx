@@ -10,18 +10,19 @@ import {
 export default function MovieDayProgramme(props) {
     let match = useRouteMatch();
     const hours = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+    
     return (
 
         <tr>
             <td className="movie">
-                { props.movie.name }
+                { props.movie }
             </td>
             {
-                hours.map(hour => {
+                props.times.map(hour => (
                     <td className="hour">
-
+                        { hour }
                     </td>
-                })
+                ))
             }
 
         </tr>
